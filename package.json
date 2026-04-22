@@ -1,0 +1,42 @@
+{
+  "name": "@eightx/quickbooks-mcp",
+  "version": "1.0.0",
+  "description": "Read-only multi-tenant QuickBooks Online MCP server. Pull P&L, Balance Sheet, Cash Flow, AR/AP aging, vendor history, and more. Built by 8x.",
+  "type": "module",
+  "license": "MIT",
+  "author": "8x — eightx.co",
+  "homepage": "https://github.com/matteightx/eightx-quickbooks-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteightx/eightx-quickbooks-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "quickbooks",
+    "qbo",
+    "accounting",
+    "ai-cfo",
+    "claude"
+  ],
+  "bin": {
+    "eightx-quickbooks-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^16.4.5",
+    "intuit-oauth": "^4.2.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
